@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/historialFragment"
+        android:icon="@drawable/ic_baseline_history_24"
+        android:title="Historial"/>
+
+    <item
+        android:id="@+id/encuestaFragment"
+        android:icon="@drawable/ic_baseline_assignment_24"
+        android:title="Encuesta"/>
+
+    <item
+        android:id="@+id/configFragment"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:title="Configuracion"/>
+
+</menu>

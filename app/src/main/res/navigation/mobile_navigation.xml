@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/historialFragment">
+
+    <fragment
+        android:id="@+id/historialFragment"
+        android:name="pe.edu.tecsup.hablemosdeseguridad.ui.Historial.HistorialFragment"
+        tools:layout="@layout/fragment_historial" />
+    <fragment
+        android:id="@+id/encuestaFragment"
+        android:name="pe.edu.tecsup.hablemosdeseguridad.ui.Encuesta.EncuestaFragment"
+        android:label="fragment_enncuesta"
+        tools:layout="@layout/fragment_encuesta" />
+    <fragment
+        android:id="@+id/configFragment"
+        android:name="pe.edu.tecsup.hablemosdeseguridad.ui.Config.ConfigFragment"
+        android:label="fragment_config"
+        tools:layout="@layout/fragment_config" />
+</navigation>
