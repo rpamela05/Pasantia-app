@@ -74,7 +74,6 @@ public class EncuestaFragment extends Fragment {
                              Bundle savedInstanceState) {
         SharedPreferences preferences=getActivity().getSharedPreferences("Credencial", 0);
         String dni=preferences.getString("dni","");
-        Toast.makeText(getActivity(), "aa"+dni, Toast.LENGTH_SHORT).show();
         View v= inflater.inflate(R.layout.fragment_encuesta, container, false);
         btnsgte=v.findViewById(R.id.btnSiguiente);
         btnsgte.setOnClickListener(new View.OnClickListener() {
