@@ -1,6 +1,8 @@
 package pe.edu.tecsup.hablemosdeseguridad;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.widget.Toast;
 
@@ -24,10 +26,11 @@ public class BottomNavActivity extends AppCompatActivity {
         BottomNavigationView navView = findViewById(R.id.nav_view);
         Intent intent=getIntent();
         String dni=intent.getStringExtra("dni");
-        Bundle bundle=new Bundle();
-        bundle.putString("name","aaaaaaaa");
-        EncuestaFragment effacement=new EncuestaFragment();
-        effacement.setArguments(bundle);
+        SharedPreferences preferences=getSharedPreferences("Credencial", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor=preferences.edit();
+        editor.putString("dni",dni);
+        editor.commit();
+
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         getSupportActionBar().hide();
