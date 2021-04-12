@@ -67,24 +67,28 @@
                 android:layout_marginStart="30dp">
 
                 <RadioButton
+                    android:id="@+id/radio_diurnista"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Diurnista"
                     android:textSize="20sp"/>
 
                 <RadioButton
+                    android:id="@+id/radio_turnoA"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Turno A"
                     android:textSize="20sp"/>
 
                 <RadioButton
+                    android:id="@+id/radio_turnoB"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Turno B"
                     android:textSize="20sp"/>
 
                 <RadioButton
+                    android:id="@+id/radio_turnoC"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Turno C"
